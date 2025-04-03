@@ -1,0 +1,357 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+header {
+ background:#964B00;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+
+}
+
+header a img{
+	height: 90px;
+	width: 130px;
+}
+
+/*Gallery Section*/
+
+
+  section {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Space between images */
+            padding: 20px;
+        }
+     
+
+        .image-container {
+            text-align: center;
+            width: 50%; /* Adjust width to fit in one row */
+            max-width: 600px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-container h2 {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+
+
+       
+
+
+section img {
+  width: 30%;  /* Make images responsive to section width */
+  max-width: 600px; /* Limit max size for better aesthetics */
+  height: 30%; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below images */
+  margin: 20px auto; /* Center align images */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+   gap: 20px; /* Space between images */ 
+  justify-content: center;
+}
+
+section img:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+
+ 
+/* Hero Section */
+.about-hero {
+    background: url('images/about-hero.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: black;
+}
+
+/* Core Values */
+.values-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.value-item {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Team */
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Testimonials */
+.testimonial-item {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Partnership */
+.partnerships {
+    padding: 40px 0;
+    background: #ddd;
+}
+
+
+
+
+
+/* Navbar Styles */
+
+.navbar {
+  font-style:italic;
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #964B00;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav-links {
+  list-style:none;
+  display: flex;
+  gap: 120px; /* Space between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 200;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #F8E231; /* Add hover effect */
+}
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    background: url('images/back.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    background: #FF5733;
+    color: white;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+
+/* Featured Section */
+.featured {
+    padding: 2em 0;
+}
+
+.featured .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0.5em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background:#964B00;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* FAQ Section */
+header {
+    background-color: #C6E2B5
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.faq-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+details {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #8B0A1A;
+}
+
+.details p {
+    margin-top: 10px;
+    color: #333;
+}
+
+
+
+/* Contact Form */
+.main_contact{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10%;
+}
+
+
+.first_main{
+	background: ;
+	padding: 2% 3%;
+	border-radius: 20px;
+}
+
+
+.first_main h1{
+	color:var(--clr);
+	padding: 4% 0;
+}
+
+
+.first_main p i{
+	color: var(--clr);
+	padding: 2% 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input, .form textarea, .form button {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 0.3em;
+}
+
+.form button {
+    background: #0047AB;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
